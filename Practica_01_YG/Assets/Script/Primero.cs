@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Primero : MonoBehaviour
 {
+    int numero = 0;
 
-    float ejem1 = 5;
-    float ejem2 = 3;
-    float ejem3;
 
     // Start is called before the first frame update
     void Start()
     {
-        float ejem3 = ejem1 + ejem2;
-        print(ejem3);
+        for (numero = 0; numero < 10; numero++)
+        {
+           
+            print(numero);
+        }
     }
 
     // Update is called once per frame
