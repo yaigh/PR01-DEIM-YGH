@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Primero : MonoBehaviour
 {
-    int numero = 0;
+    private int aleatorio;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        for (numero = 0; numero < 10; numero++)
+        while (aleatorio != 10)
         {
-           
-            print(numero);
+       
+            aleatorio = Random.Range(0, 20);
+            print("El numero es " + aleatorio);
         }
     }
 
