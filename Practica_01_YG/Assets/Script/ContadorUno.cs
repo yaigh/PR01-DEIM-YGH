@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ContadorUno : MonoBehaviour
 {
     [SerializeField] Text text1;
-
+    [SerializeField] float speed; 
 
     // Start is called before the first frame update
     void Start()
