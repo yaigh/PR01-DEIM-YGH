@@ -5,18 +5,28 @@ using UnityEngine;
 public class Primero : MonoBehaviour
 {
 
-    string men1 = "Hoy lo logro";
-    string men2 = " o puede que no";
-    string men3;
+    int men1 = 5;
+    int men2 = 5;
+    int men3;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Variable string
-        string men3 = men1 + men2;
-        print(men3);
+        // Variable int + if
 
-
+        int men3 = men1 + men2;
+        if (men3 < 10)
+        {
+            print("Estas muerto");
+        }
+        else if (men3 > 10)
+        {
+            print("Estas vivo");
+        }
+        else
+        {
+            print("A saber como estas");
+        }
 
     }
 
