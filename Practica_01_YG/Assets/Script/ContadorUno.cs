@@ -12,9 +12,18 @@ public class ContadorUno : MonoBehaviour
     void Start()
     {
 
-        for (int n = 0; n <= 10; n++)
+        StartCoroutine("Cronometro");
+
+    }
+
+
+    IEnumerator Cronometro()
+    {
+        for(int n = 0; n <= 100; n++)
         {
-            text1.text = "Contador: " + n; 
+            text1.text = "Contador: " + n;
+            yield return new WaitForSeconds(1f);
+
         }
 
     }
