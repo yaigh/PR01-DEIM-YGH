@@ -5,28 +5,22 @@ using UnityEngine.UI;
 
 public class ContadorUno : MonoBehaviour
 {
-    [SerializeField] Text text1;
-    [SerializeField] float speed; 
+    [SerializeField] Text men1;
 
     // Start is called before the first frame update
     void Start()
     {
-
-        StartCoroutine("Cronometro");
-
-    }
-
-
-    IEnumerator Cronometro()
-    {
-        for(int n = 0; n <= 100; n++)
+        for (int n = 0; n <= 30; n++)
         {
-            text1.text = "Contador: " + n;
-            yield return new WaitForSeconds(1f);
-
+            men1.text = "Contador: " + n;
+           
         }
+       
 
     }
+
+
+    
 
     // Update is called once per frame
     void Update()
