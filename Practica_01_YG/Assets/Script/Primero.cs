@@ -5,29 +5,26 @@ using UnityEngine;
 
 public class Primero : MonoBehaviour
 {
-    
-
-
-
+    float numero1 = 0f;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Saludar("Yaiza", 20);
-        Saludar("Adrian", 21);
-        Saludar("Patri", 22);
+        
 
-    }
-    void Saludar(string nombre, int edad)
-    {
-        print("Hola " + nombre + " Tiene " + edad);
     }
     
 
 // Update is called once per frame
 void Update()
     {
-        
+        while (numero1 < 20)
+        {
+            numero1++;
+            print(numero1);
+
+        }
+
     }
 }
