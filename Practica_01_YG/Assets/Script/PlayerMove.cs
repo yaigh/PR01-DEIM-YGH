@@ -11,6 +11,7 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        speed = 5f;
         transform.position = cubePosition;
 
     }
@@ -18,9 +19,23 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // print(Input.GetAxis("Horizontal"));
+
+        float desplH = Input.GetAxis("Horizontal");
+        transform.Translate(Vector3.right * Time.deltaTime * speed * desplH);
+
+
+        float desplV= Input.GetAxis("Vertical");
+        transform.Translate(Vector3.up * Time.deltaTime * speed * desplV);
+
+
+        /*
         Vector3 destPos = new Vector3(-1f, 1f, 1f);
         cubePosition = cubePosition + destPos * Time.deltaTime * speed;
         transform.position = cubePosition;
+        */
+
 
     }
 }

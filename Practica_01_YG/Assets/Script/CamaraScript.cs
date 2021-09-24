@@ -25,7 +25,7 @@ public class CamaraScript : MonoBehaviour
     void MoverCamara()
     {
         transform.LookAt(player);
-
+        /*
         print(playerObject.transform.position);
 
         float newX = playerObject.transform.position.x;
@@ -35,6 +35,7 @@ public class CamaraScript : MonoBehaviour
        //transform.position = new Vector3(playerObject.transform.position.x, playerObject.transform.position.y, transform.position.z);
 
         transform.position = new Vector3(newX, newY, newZ);
+        */
     }
 
 }
