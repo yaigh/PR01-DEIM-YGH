@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 580073730}
+  playerObject: {fileID: 580073728}
 --- !u!1 &245218128
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eb71903fd5b83c4fb6227e6ce8a6cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!4 &580073730
 Transform:
   m_ObjectHideFlags: 0

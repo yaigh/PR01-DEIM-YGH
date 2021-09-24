@@ -5,6 +5,7 @@ using UnityEngine;
 public class CamaraScript : MonoBehaviour
 {
     [SerializeField] Transform player;
+    [SerializeField] GameObject playerObject;
 
 
     // Start is called before the first frame update
@@ -17,5 +18,7 @@ public class CamaraScript : MonoBehaviour
     void Update()
     {
         transform.LookAt(player);
+
+        print(playerObject.transform.position);
     }
 }

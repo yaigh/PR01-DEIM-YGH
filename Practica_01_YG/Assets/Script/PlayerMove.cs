@@ -7,6 +7,7 @@ public class PlayerMove : MonoBehaviour
     private Vector3 cubePosition = new Vector3(0f, 0f, 0f);
     public float speed = 0;
 
+
     // Start is called before the first frame update
     void Start()
     {
