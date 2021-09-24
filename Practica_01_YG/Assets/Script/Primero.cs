@@ -5,25 +5,27 @@ using UnityEngine;
 
 public class Primero : MonoBehaviour
 {
-    private Vector3 Initpos;
-    [SerializeField] Vector3 Destpos;
-    private Vector3 Finalpos;
-    public float speed = 4f;
-
-
+    
+    public float numero2;
+    bool alive = true;
+    bool alive2 = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (numero2 < 20)
+        {
+            print(alive);
+        }
+        else
+        {
+            print(alive2);
+        }
     }
     
 
 // Update is called once per frame
 void Update()
     {
-        Initpos = transform.position;
-        Finalpos = Initpos + Destpos * Time.deltaTime * speed;
-        print(Initpos);
-
+        
     }
 }
