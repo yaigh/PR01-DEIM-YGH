@@ -1,31 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Primero : MonoBehaviour
 {
-    
-    public float numero2;
-    bool alive = true;
-    bool alive2 = false;
+    float num1 = 65f;
+    float num2 = 43f;
+   
+
     // Start is called before the first frame update
     void Start()
     {
-        if (numero2 < 20)
-        {
-            print(alive);
-        }
-        else
-        {
-            print(alive2);
-        }
+        
+
     }
+
+    float Multiplicar (float num1, float num2)
+    {
+        float resultado;
+        resultado = num1 + num2;
+        return resultado;
+    }
+    
     
 
 // Update is called once per frame
 void Update()
     {
-        
+       
     }
 }
