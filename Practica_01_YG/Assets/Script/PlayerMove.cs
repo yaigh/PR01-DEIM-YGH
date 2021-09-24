@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     private Vector3 cubePosition = new Vector3(0f, 0f, 0f);
+    public float speed = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,9 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Vector3 destPos = new Vector3(-1f, 1f, 0f);
+        cubePosition = cubePosition + destPos * Time.deltaTime * speed;
+        transform.position = cubePosition;
+
     }
 }
