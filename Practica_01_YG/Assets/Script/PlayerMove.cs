@@ -18,7 +18,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 destPos = new Vector3(-1f, 1f, 0f);
+        Vector3 destPos = new Vector3(-1f, 1f, 1f);
         cubePosition = cubePosition + destPos * Time.deltaTime * speed;
         transform.position = cubePosition;
 
