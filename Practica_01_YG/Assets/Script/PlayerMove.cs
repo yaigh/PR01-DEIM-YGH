@@ -29,6 +29,9 @@ public class PlayerMove : MonoBehaviour
         float desplV= Input.GetAxis("Vertical");
         transform.Translate(Vector3.up * Time.deltaTime * speed * desplV);
 
+        float desplZ = Input.GetAxis("Profundidad");
+        transform.Translate(Vector3.back * Time.deltaTime * speed * desplZ);
+
 
         /*
         Vector3 destPos = new Vector3(-1f, 1f, 1f);
