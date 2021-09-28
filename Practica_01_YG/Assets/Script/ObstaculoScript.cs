@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ObstaculoScript : MonoBehaviour
 {
-    public PersonajeScript personajeScript;
+    public GameObject otroObjeto;
+    private PersonajeScript personajeScript;
+
 
     // Start is called before the first frame update
     void Start()
@@ -14,7 +16,10 @@ public class ObstaculoScript : MonoBehaviour
         personajeScript.energy = 50;
         print(personajeScript.energy);
         */
-        personajeScript.energy = 75;
+
+        personajeScript = otroObjeto.GetComponent<PersonajeScript>();
+
+        personajeScript.energy = 150;
         personajeScript.SendMessage("UpdateText");
 
     }
